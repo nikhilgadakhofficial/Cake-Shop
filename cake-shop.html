@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop</title>
+    <style>
+        .xyz{
+            color: #d83955;
+            color:#ff94a3;
+            color:#61bba5 ;
+            color: #f3f2f0;
+        }
+        body{
+            background-color:#a7f4ec;
+            margin: 0px;
+            padding: 0px;
+        }
+        .mane-heding{
+            background-color:#f1b6c6;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .mane-title{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .mane-img{
+            height:100px;
+            margin-top: 10px;      
+            height:100px;
+            margin-top: 10px;
+
+        }
+        .mane-img{
+            height:100px;
+            margin-top: 10px;
+        }
+        .title{
+            background-color:black;
+            color: white;
+            font-weight:bold;
+            font-size: 20px;
+            border: 5px double white;
+            padding: 5px 20px;
+            margin: 10px;
+            cursor: pointer;
+            flex-wrap: wrap;
+        }
+        .title:hover{
+        padding: 8px 27px;
+        transition: 0.1s;
+        }
+        .all-title{
+            margin-left: 50px;
+        }
+    
+        .second-img{
+            height: 550px;
+            margin-right: 200px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20px;
+
+        }
+        .btn{
+            background-color:#fdacc7;
+            font-size: 20px;
+            font-weight: bold;
+            border:3px solid black ;
+            border-radius: 15px;
+            padding: 5px 10px;
+            margin: 10px;
+            box-shadow: 1px 1px 2px 1px black;
+            cursor: pointer;
+        }
+        .btn:hover{
+            padding: 5px 25px;
+            margin: 5px;
+            box-shadow: 1px 1px 3px 3px black;
+
+        }
+        .title-heding{
+            text-align: center;
+            font-size: 50px;
+        }
+        .card{
+            width: 300px;
+            background-color:#fdacc7;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 1px 1px 5px 2px black ;
+            position: relative;
+        }
+        .ion-font{
+            font-size: 50px;
+            text-align: center;
+            position: absolute;
+            top: -50px;
+            left: 145px;
+        }
+        .card-font{
+            text-align: center;
+            font-size: 30px;
+        }
+        .card-font2{
+            text-align: center;
+        }
+        .card-contner{
+            margin-top: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .cake-card-conuter{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+        }
+        .cake-heding{
+            font-size: 40px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .cake-img{
+            width: 150px;
+            margin-left: 50px;
+            }
+        .cake-name{
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .cake-price{
+            text-align: center;
+            font-weight: bold;
+        }
+        .cake-card{
+            width: 250px;
+            margin: 30px;
+            padding: 20px;
+            border-radius: 15px;
+            background-color:#fdacc7;
+            box-shadow: 1px 1px 2px 2px black;
+        }
+        .cake-btn{
+            margin-left: 50px;
+            background-color:#a7f4ec;
+            font-size: 20px;
+            font-weight: bold;
+            border:3px solid black ;
+            border-radius: 15px;
+            padding: 5px 10px;
+            box-shadow: 1px 1px 2px 1px black;
+            cursor: pointer;
+        }
+        .Customer-contner{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .Customer-img{
+            border-radius: 50%;
+        }
+        .customer-review{
+            text-align: center;
+        }
+        .cursor-card{
+            width: 300px;
+            height: 200px;
+            border-radius: 15px;
+            border: 2px solid black;
+            box-shadow: 1px 1px 2px 2px black;
+            margin: 20px;
+            padding: 20px;
+            background-color:white;
+        }
+        .Customer-name{
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .Customer-best{
+            font-weight: bold;
+        }
+        .footer{
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 40px;
+            background-color:#1a1a1a;
+            width: 1700px;
+            height:200px;
+            padding: 20px;
+            box-shadow: 1px 1px 2px 2px white;
+        }
+        .footer-titil{
+            color: white;
+            font-size: 25px;
+            margin-left: 60px;
+        }
+        .footer-name{
+            color: white;
+            margin-left: 10px;
+            font-size: 25px;
+        }
+        .icon-footer{
+            font-size: 50px;
+            padding: 20px;
+        }
+        .footer-card{
+            color: white;
+        }
+        .footer-conter{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        @media only screen and (max-width: 600px){
+            .mane-img{
+            height:70px;
+            margin-top:0px;
+        }
+        .mane-title{
+            font-size: 30px;
+            font-weight: bold;
+    }
+    .title{
+            font-weight: 30px;
+            border: 2px;
+            padding: 3px 7px;
+            margin: 5px;
+            margin-left: 20px;
+            cursor: pointer;
+            border: 5px double white;
+            flex-wrap: wrap;
+    }
+    .title:hover{
+        padding: 4px 10px;
+        transition: 0.1s;
+        }
+    .second-img{
+            height: 300px;
+            margin-right: 100px;
+        }
+        .container-h1{
+            font-size:20px ;
+        }
+        .btn{
+            font-size: 10px;
+            font-weight: bold;
+        }
+    .card{
+        margin: 40px;
+    }
+        
+
+   }
+    @media only screen and (min-width: 601px) and (max-width:800px){
+    .title{
+            font-weight: 30px;
+            border: 2px;
+            padding: 3px 7px;
+            margin: 5px;
+            margin-left: 20px;
+            cursor: pointer;
+            border: 5px double white;
+            flex-wrap: wrap;
+    }
+    .title:hover{
+        padding: 4px 10px;
+        transition: 0.1s;
+        }
+    .mane-img{
+            height:70px;
+            margin-bottom: 10px;
+        }
+        .mane-title{
+            font-size: 30px;
+            font-weight: bold;
+            margin-left: 50px;
+        }
+        .second-img{
+            height: 300px;
+            margin-right: 100px;
+        }
+        .container-h1{
+            font-size:15px ;
+        }
+        .btn{
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .card{
+            margin: 30px;
+        }
+        .footer{
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 40px;
+            background-color:#1a1a1a;
+            width: 1700px;
+            height: 200px;
+            padding: 20px;
+            box-shadow: 1px 1px 2px 2px white;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .icon-footer{
+            font-size: 30px;
+            padding: 20px;
+        }
+    }
+            
+    
+    </style>
+</head>
+<body>
+    <div class="mane-heding">
+
+    <img src="C:\Users\Admin\Downloads\icons8-wedding-cake-64.png" class="mane-img"/>
+    <span class=" mane-title"> 🎀 The Cake Shop 🎀</span>
+
+   <div class="all-title">
+    <span class="title">Home</span>
+
+    <span class="title">About</span>
+
+    <span class="title">Services</span>
+
+    <span class="title">Content</span>
+   </div>
+
+    </div>
+    <div class="container"> 
+        <div>
+        <img src="https://img.freepik.com/free-vector/bakery-background-flat-style_23-2147778061.jpg?size=626&ext=jpg&ga=GA1.2.1388368664.1696139481&semt=ais"class="second-img" />
+        </div>
+        <div>
+            <h1 class="container-h1">"Making Every Celebration Sweeter"</h1>
+            <p>Order Youer Favourite cake Now!!</p>
+            <button class="btn" type="button"> Explore Cakes</button>
+        </div>
+    </div>
+         <h1 class="title-heding">Cake Shop Quality...</h1>
+
+        <div class="card-contner">
+        <div class="card">
+            <i class="fa-solid fa-cake-candles ion-font"></i>
+            <h1 class="card-font">Fresh Cake</h1>
+            <p class="card-font2">Bursting with fresh & fruity flavours, it is made with layers of vanilla sponge</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-truck-fast ion-font"></i>
+            <h1 class="card-font"> Free Delivery </h1>
+            <p class="card-font2">Youer Delivery Complet the 4 houer</p>
+        </div>      
+         <div class="card">
+            <i class="fa-solid fa-gift ion-font"></i>
+            <h1 class="card-font">Bast Desing Gift</h1>
+            <p class="card-font2">Bed and Bath | Home Bedding, Comforters, Duvet Covers & Bedding</p>
+        </div>      
+        <div class="card">
+            <i class="fa-solid fa-hand-holding-dollar ion-font"></i>
+            <h1 class="card-font">Bast Price</h1>
+            <p class="card-font2">Cake Sart the $200 To $1000</p>
+        </div>
+        </div>
+          <h1 class="cake-heding"> Order Cakes...🍨</h1>
+          <div class="cake-card-conuter">
+        <div class="cake-card">
+            <img src="./img/nikhil2.png" class="cake-img"/>
+            <h2 class="cake-name">Butter Scotch</h2>
+            <p class="cake-price">Rs 500</p>
+            <button  class="cake-btn">Order Now</button>
+        </div>           
+        <div class="cake-card">
+            <img src="./img/nikhil3.png" class="cake-img"/>
+            <h2 class="cake-name">Chocolate Cake</h2>
+            <p class="cake-price">Rs 300</p>
+            <button  class="cake-btn">Order Now</button>
+        </div>
+        <div class="cake-card">
+            <img src="./img/nikhil5.png" class="cake-img"/>
+            <h2 class="cake-name">Black Forest</h2>
+            <p class="cake-price">Rs 600</p>
+            <button  class="cake-btn">Order Now</button>
+        </div>
+        <div class="cake-card">
+            <img src="./img/nikhil6.png" class="cake-img"/>
+            <h2 class="cake-name">Pineapple Cake</h2>
+            <p class="cake-price">Rs 700</p>
+            <button  class="cake-btn">Order Now</button>
+        </div>
+        <div class="cake-card">
+            <img src="./img/nikhil7.png" class="cake-img"/>
+            <h2 class="cake-name">Fruit cake</h2>
+            <p class="cake-price">Rs 100</p>
+            <button  class="cake-btn">Order Now</button>
+        </div>
+        <div class="cake-card">
+            <img src="./img/nikhil8.png" class="cake-img"/>
+            <h2 class="cake-name">Choce Cake</h2>
+            <p class="cake-price">Rs 450</p>
+            <button  class="cake-btn">Order Now</button>
+        </div>
+        <div class="cake-card">
+            <img src="./img/nikhil9.png" class="cake-img"/>
+            <h2 class="cake-name">White Forest</h2>
+            <p class="cake-price">Rs 350</p>
+            <button  class="cake-btn">Order Now</button>
+        </div>
+        <div class="cake-card">
+            <img src="./img/nikhil10.png" class="cake-img"/>
+            <h2 class="cake-name">Red Love Cake</h2>
+            <p class="cake-price">Rs 250</p>
+            <button  class="cake-btn">Order Now</button>
+        </div>
+          </div>
+          <h1 class="customer-review">👇 Customer Review 👇</h1>
+          <div class="Customer-contner">
+          <div class="cursor-card">
+            <img src="https://i.pravatar.cc/100?img=1" class="Customer-img"/>
+            <span class="Customer-name">Nikhil Gadakh</span>
+            <hr/>
+            <p class="Customer-best">All Cake Are So Nice And Beautiful💕😍👍</p>
+          </div>
+          <div class="cursor-card">
+            <img src="https://i.pravatar.cc/100?img=2" class="Customer-img"/>
+            <span class="Customer-name">Om Dale</span>
+            <hr/>
+            <p class="Customer-best">We Booked Patty's Cakes And Dessrt👌😘</p>
+          </div>
+          <div class="cursor-card">
+            <img src="https://i.pravatar.cc/100?img=3" class="Customer-img"/>
+            <span class="Customer-name">Lalit Lande</span>
+            <hr/>
+            <p class="Customer-best">We used Pattys for our wedding and it was a wonderful experience from start to finish. Beautiful delicious cakes and cupcakes delivered on time.😍👍</p>
+          </div>
+          <div class="cursor-card">
+            <img src="https://i.pravatar.cc/100?img=4" class="Customer-img"/>
+            <span class="Customer-name">Abhi patil</span>
+            <hr/>
+            <p class="Customer-best">Well, these products are unreal. I received them as a gift from my sister. Remarkable quality and presentation wow! Thank you Patty..🎁
+            </p>
+          </div>
+          <div class="cursor-card">
+            <img src="https://i.pravatar.cc/100?img=5" class="Customer-img"/>
+            <span class="Customer-name">Yash Shinde</span>
+            <hr/>
+            <p class="Customer-best">I have used Pattys Cakes on past occasions for birthdays and desserts. Booking a tasting for a wedding cake and verifying they had availability 👏🎉</p>
+          </div>
+          <div class="cursor-card">
+            <img src="https://i.pravatar.cc/100?img=6" class="Customer-img"/>
+            <span class="Customer-name">Harshal Patil</span>
+            <hr/>
+            <p class="Customer-best">We did our cake tasting here and wow! Jacqueline was so helpful, informative, and encouraging! We weren’t sure if we wanted to try a particular filling🥰</p>
+          </div>
+          <div class="cursor-card">
+            <img src="https://i.pravatar.cc/100?img=7" class="Customer-img"/>
+            <span class="Customer-name">Rushi Kusekar</span>
+            <hr/>
+            <p class="Customer-best">Patty’s Cakes was amazing. The cake looked as great as expected, and it tasted great as well. I love that the frosting is not overwhelming🤗</p>
+          </div>
+          <div class="cursor-card">
+            <img src="https://i.pravatar.cc/100?img=8" class="Customer-img"/>
+            <span class="Customer-name">Aniket Bade</span>
+            <hr/>
+            <p class="Customer-best">I ordered two cakes, one very large sheet cake and one small vegan cake, both were decorated beautifully and tasted delicious.😋</p>
+          </div>
+          </div>
+
+            <div class="footer">
+                
+            <div class="footer-conter">
+
+            <div class="footer-card">
+            <p class="footer-titil">Follow Me Foe More </p>
+            <i class="fa-brands fa-instagram icon-footer" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-whatsapp icon-footer" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-facebook icon-footer" style="color: #fafcff;"></i>
+            <i class="fa-brands fa-youtube icon-footer" style="color: #ffffff;"></i>
+            </div>
+
+            <div class="footer-card">
+                <p class="footer-name">Our Menu</p>
+                <ul>
+                    <li> Home</li>
+                    <li> Abote</li>
+                    <li> Services</li>
+                    <li> Contact us</li>
+                </ul>
+                </div>
+                <div class="footer-card">
+                    <p class="footer-titil"> Contact Us </p>
+                    <i class="fa-solid fa-location-dot icon-footer" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-envelope icon-footer" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-phone icon-footer" style="color: #ffffff;"></i>
+                    </div>
+            </div>
+
+            </div>
+
+
+          
+          
+
+
+    <script src="https://kit.fontawesome.com/863b4921f2.js" crossorigin="anonymous"></script>
+</body>
+</html>
